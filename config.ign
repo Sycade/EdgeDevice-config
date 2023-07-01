@@ -11,18 +11,5 @@
         ]
       }
     ]
-  },
-  "storage": {
-    "disks": [
-      {
-        "device": "/dev/sda",
-        "partitions": [
-          {
-            "label": "root"
-          }
-        ],
-        "wipeTable": true
-      }
-    ]
   }
 }
