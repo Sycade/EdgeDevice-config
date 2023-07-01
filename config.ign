@@ -5,10 +5,41 @@
   "passwd": {
     "users": [
       {
+        "groups": [
+          "wheel",
+          "sudo"
+        ],
         "name": "sycade",
         "sshAuthorizedKeys": [
           "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA7T2zwz3WzQw/WeDa9Thhnv5GPLfErU8SDsMbD/ZYoG mlowijs@gmail.com"
         ]
+      }
+    ]
+  },
+  "storage": {
+    "files": [
+      {
+        "path": "/etc/hostname",
+        "contents": {
+          "compression": "",
+          "source": "data:,fcos-test"
+        },
+        "mode": 420
+      },
+      {
+        "path": "/etc/containers/systemd/hello-http.container",
+        "contents": {
+          "compression": "gzip",
+          "source": "data:;base64,H4sIAAAAAAAC/3SOv2qHUAxG9zxFX8CfjlK4Q/8MuhQHSwdxuNVUg7mJ5Eakb19qabduH5yPwxlehXyEZ8yT0e6kEhpk1rum7zt4i+I5CPqpthUqTII3j7agw8OHo/3DYHhS8UiCNsLffIkJw/ptL1b3HdoUFwyzThvajbTMbqm8+KnG88+pO96Z8tqpeair+7oCGFrJHpnHqw/nx8+QDnYqjoz2m/AVAAD//x+Vwe7ZAAAA"
+        }
+      }
+    ]
+  },
+  "systemd": {
+    "units": [
+      {
+        "enabled": true,
+        "name": "hello-http.service"
       }
     ]
   }
