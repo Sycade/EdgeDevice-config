@@ -1,0 +1,28 @@
+{
+  "ignition": {
+    "version": "3.4.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "name": "sycade",
+        "sshAuthorizedKeys": [
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA7T2zwz3WzQw/WeDa9Thhnv5GPLfErU8SDsMbD/ZYoG mlowijs@gmail.com"
+        ]
+      }
+    ]
+  },
+  "storage": {
+    "disks": [
+      {
+        "device": "/dev/sda",
+        "partitions": [
+          {
+            "label": "root"
+          }
+        ],
+        "wipeTable": true
+      }
+    ]
+  }
+}
